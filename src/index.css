@@ -16,7 +16,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-:root {
+/* Here you can add your own personalized tailwind classes with global access*/
+@layer components {
+  .mask-image {
+    mask-image: linear-gradient(180deg, #000 60%, transparent);
+  }
 }
 
 @layer base {

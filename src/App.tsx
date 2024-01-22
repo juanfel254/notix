@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { Button } from "@/components/ui/button";
 import { Note as NoteModel } from "./models/note";
 import Note from "./components/Note";
 
@@ -23,11 +22,11 @@ function App() {
   }, []);
 
   return (
-    <div>
+    <section className="m-5 flex flex-wrap gap-5 justify-center">
       {notes.map((note) => (
         <Note note={note} key={note._id} />
       ))}
-    </div>
+    </section>
   );
 }
 
